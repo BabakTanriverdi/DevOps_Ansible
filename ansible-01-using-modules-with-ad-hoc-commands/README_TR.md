@@ -233,7 +233,7 @@ ansible webservers -m copy -a "src=/home/ec2-user/ansible_lesson1/testfile dest=
 # shell modülü: pipe, redirect gibi shell operatörlerini destekler.
 # ';' ile birden fazla komutu sırayla çalıştırabilirsiniz.
 # Bu komut: testfile2'ye yazar, ardından içeriğini ekrana basar.
-ansible node1 -m shell -a "echo Hello Clarusway > /home/ec2-user/testfile2 ; cat testfile2"
+ansible node1 -m shell -a "echo Hello Ansible > /home/ec2-user/testfile2 ; cat testfile2"
 ```
 
 ### Ubuntu ile Devam
@@ -253,7 +253,7 @@ ansible all --list-hosts
 ansible all -m ping -o
 
 # HATA VERECEK ÖRNEK: node1 ve node2'de /home/ubuntu dizini yoktur!
-ansible all -m shell -a "echo Hello Clarusway > /home/ubuntu/testfile3"
+ansible all -m shell -a "echo Hello Ansible > /home/ubuntu/testfile3"
 ```
 
 Beklenen hata çıktısı:
@@ -267,10 +267,10 @@ Doğru kullanım — sunucuları ayrı hedefleyin:
 ```bash
 # ':' ile birden fazla host ya da grup hedeflenebilir.
 # node1 ve node2: Amazon Linux → home dizini /home/ec2-user
-ansible node1:node2 -m shell -a "echo Hello Clarusway > /home/ec2-user/testfile3"
+ansible node1:node2 -m shell -a "echo Hello Ansible > /home/ec2-user/testfile3"
 
 # node3: Ubuntu → home dizini /home/ubuntu
-ansible node3 -m shell -a "echo Hello Clarusway > /home/ubuntu/testfile3"
+ansible node3 -m shell -a "echo Hello Ansible > /home/ubuntu/testfile3"
 ```
 
 ### shell Modülü ile Nginx Kurulumu
