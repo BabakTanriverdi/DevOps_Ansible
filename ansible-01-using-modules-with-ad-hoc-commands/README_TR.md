@@ -244,7 +244,7 @@ Bir Ubuntu EC2 instance oluşturun ve `inventory.txt` dosyasına ekleyin:
 [ubuntuserver]
 node3 ansible_host=<node3_ip> ansible_user=ubuntu
 ```
-
+ 
 ```bash
 # Güncellenmiş inventory'deki tüm host'ları listeleyelim.
 ansible all --list-hosts
