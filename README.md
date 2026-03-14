@@ -293,28 +293,28 @@ ansible-galaxy init my_role                # scaffold a new role
 ## 🗺️ Learning Path
 
 ```
-  ┌──────────────────────────────────────────────────────────┐
-  │                                                          │
-  │  [01] Ad-hoc Commands                                    │
-  │        ping · copy · shell · yum · package               │
-  │                          │                               │
-  │                          ▼                               │
-  │  [02] Playbooks & Tasks                                  │
-  │        tasks · handlers · notify · loops                 │
-  │                          │                               │
-  │                          ▼                               │
-  │  [03] Facts · Variables · Vault · Dynamic Inventory      │
-  │        ansible_facts · group_vars · host_vars            │
-  │                          │                               │
-  │                          ▼                               │
-  │  [04] Directory Layout · Error Handling                  │
-  │        block · rescue · ignore_errors                    │
-  │                          │                               │
-  │                          ▼                               │
-  │  [05] Roles · Ansible Galaxy                             │
-  │        reusable · community roles                        │
-  │                                                          │
-  └──────────────────────────────────────────────────────────┘
+                    ┌──────────────────────────────────────────────────────────┐
+                    │                                                          │
+                    │  [01] Ad-hoc Commands                                    │
+                    │        ping · copy · shell · yum · package               │
+                    │                          │                               │
+                    │                          ▼                               │
+                    │  [02] Playbooks & Tasks                                  │
+                    │        tasks · handlers · notify · loops                 │
+                    │                          │                               │
+                    │                          ▼                               │
+                    │  [03] Facts · Variables · Vault · Dynamic Inventory      │
+                    │        ansible_facts · group_vars · host_vars            │
+                    │                          │                               │
+                    │                          ▼                               │
+                    │  [04] Directory Layout · Error Handling                  │
+                    │        block · rescue · ignore_errors                    │
+                    │                          │                               │
+                    │                          ▼                               │
+                    │  [05] Roles · Ansible Galaxy                             │
+                    │        reusable · community roles                        │
+                    │                                                          │
+                    └──────────────────────────────────────────────────────────┘
 ```
 
 ---
