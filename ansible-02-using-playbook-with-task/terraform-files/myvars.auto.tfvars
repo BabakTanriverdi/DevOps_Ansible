@@ -1,0 +1,9 @@
+//aws_access_key = ""
+//aws_secret_key = ""
+mykey = "mod_1_key"
+tags = ["control_node", "node_1", "node_2", "node_3"]
+instancetype = "t3.small"
+num = 4
+region = "us-east-1"
+amznlnx = "ami-0157af9aea2eef346"
+ubuntu = "ami-0ecb62995f68bb549"
