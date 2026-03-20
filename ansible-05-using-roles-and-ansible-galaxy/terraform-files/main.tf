@@ -19,7 +19,7 @@ provider "aws" {
 }
 
 locals {
-  user = "serag"
+  user = "babak"
 }
 
 resource "aws_instance" "nodes" {
