@@ -120,7 +120,7 @@ ansible-playbook ping-playbook.yml
 ```bash
 # ansible-galaxy init: Standart role dizin yapısını otomatik oluşturur.
 # apache       : Oluşturulacak role'ün adı.
-# --init-path  : Role'ün oluşturulacağı dizin.
+# --init-path  : Role'ün oluşturulacağı dizin. Olmayan dizini kendisi olusturur
 ansible-galaxy init apache --init-path ../ansible/roles/
 ```
 
