@@ -86,7 +86,7 @@ ansible all -m ping -o
     db_name: phonebook_db
     db_table: phonebook
     db_user: remoteUser
-    db_password: clarus1234
+    db_password: ansible1234
 
   tasks:
     - name: set hostname
@@ -250,7 +250,7 @@ cd ../host_vars && touch db_server.yml web_server.yml
 db_name: phonebook_db
 db_table: phonebook
 db_user: remoteUser
-db_password: clarus1234
+db_password: ansible1234
 ```
 
 - Next, create variables for the playbook under `db_server.yml`
