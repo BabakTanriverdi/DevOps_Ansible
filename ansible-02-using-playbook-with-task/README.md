@@ -104,7 +104,7 @@ ansible all -m ping -o
 ansible-playbook playbook1.yml
 ```
 
-- Create a text file named ``testfile1`` and write "Hello Ondiaway" with using vim. Then create a yaml file name ``playbook2.yml`` and send the "testfile1" to the hosts. 
+- Create a text file named ``testfile1`` and write "Hello DevOpsway" with using vim. Then create a yaml file name ``playbook2.yml`` and send the "testfile1" to the hosts. 
 
 ```yml
 ---
@@ -234,7 +234,7 @@ vim playbook5.yml
 
    - name: index.html
      ansible.builtin.copy:
-       content: "<h1>Hello Ondiaway</h1>"
+       content: "<h1>Hello DevOpsway</h1>"
        dest: /var/www/html/index.html
 
    - name: restart apache2
