@@ -593,7 +593,7 @@ ansible all -b -m command -a "grep alex /etc/shadow"
 Şimdi şifreyi AWS Parameter Store'a taşıyın:
 
 1. AWS Console → Systems Manager → Parameter Store → Create parameter
-2. Name: `serag-vault_passwd` → Value: `123456`
+2. Name: `babak-vault_passwd` → Value: `123456`
 
 `vault_passwd.sh` dosyasını güncelleyin:
 
@@ -609,7 +609,7 @@ vim vault_passwd.sh
 # --query      : Yalnızca Value alanını döndürür
 # --output text: JSON yerine düz metin çıktısı verir
 aws --region=us-east-1 ssm get-parameters \
-    --names "serag-vault_passwd" \
+    --names "babak-vault_passwd" \
     --query "Parameters[*].{Value:Value}" \
     --output text
 ```
