@@ -138,7 +138,7 @@ ansible-playbook playbook1.yml
 ```bash
 # testfile1 dosyasını oluşturur.
 vim testfile1
-# İçine "Hello Ondiaway" yazın, kaydedin.
+# İçine "Hello DevOpsway" yazın, kaydedin.
 ```
 
 ```bash
@@ -292,7 +292,7 @@ vim playbook5.yml
 
     - name: Deploy index.html
       ansible.builtin.copy:
-        content: "<h1>Hello Ondiaway</h1>"   # HTML içeriğini doğrudan dosyaya yazar
+        content: "<h1>Hello DevOpsway</h1>"   # HTML içeriğini doğrudan dosyaya yazar
         dest: /var/www/html/index.html        # Apache'nin varsayılan web dizini
 
     - name: Restart apache2
@@ -323,7 +323,7 @@ vim playbook5.yml
 ansible-playbook -b playbook5.yml
 ```
 
-> `http://<node3_ip>` adresini tarayıcıda açın → "Hello Ondiaway" sayfasını görün.
+> `http://<node3_ip>` adresini tarayıcıda açın → "Hello DevOpsway" sayfasını görün.
 
 ---
 
