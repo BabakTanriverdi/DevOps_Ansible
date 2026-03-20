@@ -636,13 +636,13 @@ ansible all -b -m command -a "grep alex /etc/shadow"
 - This time, our vault password is in a file in plain text. This is an insecure usage. We can use third-party applications like `AWS Parameter Store`.
 
 
-- Create a parameter named `serag-vault_passwd` at AWS Parameter Store. Input `123456` as a value.
+- Create a parameter named `babak-vault_passwd` at AWS Parameter Store. Input `123456` as a value.
 
 - Modify the `vault_passwd.sh` file as below.
 
 ```sh
 #!/bin/bash
-aws --region=us-east-1 ssm get-parameters --names "serag-vault_passwd" --query "Parameters[*].{Value:Value}" --output text
+aws --region=us-east-1 ssm get-parameters --names "babak-vault_passwd" --query "Parameters[*].{Value:Value}" --output text
 ```
 
 - Make the script executable.
