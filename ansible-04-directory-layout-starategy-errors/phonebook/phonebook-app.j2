@@ -17,7 +17,7 @@ app = Flask(__name__)
 
 app.config['MYSQL_DATABASE_HOST'] = "{{ hostvars['db_server']['ansible_facts']['default_ipv4']['address'] }}"
 app.config['MYSQL_DATABASE_USER'] = 'remoteUser'
-app.config['MYSQL_DATABASE_PASSWORD'] = 'clarus1234'
+app.config['MYSQL_DATABASE_PASSWORD'] = 'ansible1234'
 app.config['MYSQL_DATABASE_DB'] = 'phonebook_db'
 app.config['MYSQL_DATABASE_PORT'] = 3306
 # db_endpoint.close()
@@ -27,7 +27,7 @@ connection = mysql.connect()
 connection.autocommit(True)
 cursor = connection.cursor()
 
-# Write a function named `init_todo_db` create phonebook table within clarusway_phonebook db, if it doesn't exist
+# Write a function named `init_todo_db` create phonebook table within ansible_phonebook db, if it doesn't exist
 
 # Lets paste Because of the id is auto_incremental, I don't need to worry about to id column. mysql is going to give id on behalf of us.
 def init_phonebook_db():
